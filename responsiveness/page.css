@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    color: white;
+    height: 50vh;
+    padding: 30px;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+background-image: url(/bg-intro-desktop.png);
+background-repeat: repeat-x;
+  
+  
+}
+
+main{
+
+    display: grid;
+    grid-template-areas: 
+    'a b b'
+    'a c c';
+   gap: 5px;
+   height: 70vh;
+   grid-template-rows: 30px; 
+   width: 100%;
+   box-sizing: border-box;
+  
+
+}
+   
+
+.first{
+    background-color: hsl(0, 100%, 74%) ;
+    grid-area: a;
+    box-sizing: border-box;
+    padding: 100px 0px 100px;
+    width: 70%;
+    margin: 0px 0px 0px 20px;
+    
+   
+ 
+   
+}
+.second{
+    background-color: hsl(248, 32%, 49%);
+    grid-area:b;
+    margin-left: 10px;
+    margin-right: 80px;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgb(51, 48, 48);
+    
+
+}
+.third{
+    background-color: white;
+    grid-area: c;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-right: 80px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px  rgb(83, 71, 71);
+    border-radius: 6px;
+
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    height: 20%;
+    padding: 10px 10px 10px 10px ;
+    display:block ;
+    box-sizing: border-box;
+}
+
+form{
+    margin: 30px 30px 20px;
+
+}
+
+button{
+
+    margin: 0px 100px 0px 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+   
+
+    
+}
+
+p, h1{
+    text-align: center;
+    line-height: 30px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-size: 15px;
+}
+.para{
+    color: hsl(246, 25%, 77%)
+    ;
+    font-size: 7px;
+    text-align: center;
+    
+}
+.bold{
+    color: red;
+}
+.para-1{
+    text-align: left;
+}
+
+form input[type="text"]:active{
+    background-color: hsl(246, 25%, 77%);
+}
+
+@media screen and(min-width:400px) {
+    main{
+        grid-template-areas: 
+        'a a a'
+        'b b b '
+        'c c c';
+    }
+}
